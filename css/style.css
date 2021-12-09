@@ -14,6 +14,11 @@ body {
   font-weight: 400;
 }
 
+.card, .card-body, .left, .right, .rightColumn, .border-bottom {
+    margin: 0;
+    padding: 0;
+}
+
 .left {
     background-color: #018383;
     padding-top: 50px;
@@ -101,13 +106,12 @@ h3 {
 .card-time.orange-bg {
     background-color: #E28805;
     color: white;
+    border-bottom-left-radius: 15px;
 }
 
 .card-header.red-bg {
     background-color: #F83C4A;
     color: white;
-    height: 50px;
-    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -131,11 +135,13 @@ h3 {
 .card-time.blue-bg {
     background-color: #318ACC;
     color: white;
+    border-bottom-left-radius: 15px;
 }
 
 .card-time.red-bg {
     background-color: #D82339;
     color: white;
+    border-bottom-left-radius: 15px;
 }
 
 .card-time {
