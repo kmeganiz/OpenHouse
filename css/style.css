@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+.left {
+    background-color: #018383;
+    padding-top: 50px;
+}
+
+.right {
+    background-color: #009C99;
+}
+
+.nav-item.orange {
+    background-color: #FFA401;
+}
+
+
+.red {
+    background-color: #F83C4A;
+}
+
+.blue {
+    background-color: #318ACC;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.leftColumn h2, .leftColumn h3 {
+    color: white;
+}
+
+.leftColumn h2 {
+    text-transform: uppercase;
+}
+
+.rightColumn {
+    margin-top: 50px;
+}
+
+.rightColumn h1 {
+    color: white;
+}
+
+.card {
+    border: none;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.card-header h2 {
+    margin: 10px auto 10px 15px;
+}
+
+.card-time h2 {
+    margin-top: 60px;
+}
+
+.card-header.blue-bg, .card-header.orange-bg, .card-header.red-bg, .card-header.darkblue-bg {
+    color: white;
+    height: 60px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+}
+
+.card-header.blue-bg {
+    background-color: #318ACC;
+}
+
+.card-header.orange-bg {
+    background-color: #FFA401;
+}
+
+.card-time.orange-bg {
+    background-color: #E28805;
+    color: white;
+}
+
+.card-header.red-bg {
+    background-color: #F83C4A;
+    color: white;
+    height: 50px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    border-radius: 15px;
+}
+
+.connect {
+    color: white;
+    margin-top: 30px;
+}
+
+.sosmed-icons a {
+    color: white;
+}
+
+.card-time.darkblue-bg {
+    background-color: #4C7393;
+    color: white;
+}
+
+.card-time.blue-bg {
+    background-color: #318ACC;
+    color: white;
+}
+
+.card-time.red-bg {
+    background-color: #D82339;
+    color: white;
+}
+
+.card-time {
+    width: 150px;
+}
+
+.card-room h4 {
+    font-size: 0.8rem;
+    margin-top: 10%;
+}
+
+.card-room p {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #318ACC;
+    border-radius: 10px;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* .nav-link:hover{
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+} */
+
+@media (min-width:1400px) {
+    .leftColumn img {
+        margin-left: 40%;
+    }
+
+    .rightColumn {
+        margin-left: 50px;
+    }
+    .leftColumn h2, .leftColumn h3 {
+        margin-left: 45%;
+    }
+    .connect {
+        margin-left: 40%;
+    }
+}
