@@ -28,10 +28,9 @@ body {
     background-color: #009C99;
 }
 
-.nav-item.orange {
+.orange {
     background-color: #FFA401;
 }
-
 
 .red {
     background-color: #F83C4A;
@@ -70,6 +69,10 @@ h3 {
 
 .rightColumn h1 {
     color: white;
+}
+
+.borderline  {
+    border-top: 2px solid white;
 }
 
 .card {
