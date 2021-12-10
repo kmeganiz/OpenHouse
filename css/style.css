@@ -106,12 +106,6 @@ h3 {
     background-color: #FFA401;
 }
 
-.card-time.orange-bg {
-    background-color: #E28805;
-    color: white;
-    border-bottom-left-radius: 15px;
-}
-
 .card-header.red-bg {
     background-color: #F83C4A;
     color: white;
@@ -130,7 +124,7 @@ h3 {
     color: white;
 }
 
-.card-time.darkblue-bg {
+.card-time.darkblue-bg, .card-time.darkblue-bg-a {
     background-color: #4C7393;
     color: white;
 }
@@ -138,22 +132,19 @@ h3 {
 .card-time.blue-bg {
     background-color: #318ACC;
     color: white;
-    border-bottom-left-radius: 15px;
 }
 
+.card-time.orange-bg {
+    background-color: #E28805;
+    color: white;
+}
 .card-time.red-bg {
     background-color: #D82339;
     color: white;
-    border-bottom-left-radius: 15px;
-}
-
-.card-time {
-    width: 150px;
 }
 
 .card-room h4 {
     font-size: 0.8rem;
-    margin-top: 10%;
 }
 
 .card-room p {
@@ -170,6 +161,112 @@ h3 {
 box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 } */
 
+@media (min-width:375px) {
+    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+        margin-left: 5%;
+    }
+    .rightColumn {
+        margin-left: 3%;
+    }
+    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
+        width: 150px;
+    }
+}
+
+@media (min-width:600px) {
+    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+        margin-left: 5%;
+    }
+    .rightColumn {
+        margin-left: 3%;
+    }
+    .card-time.blue-bg, .card-time.darkblue-bg {
+        width: 150px;
+    }
+    .card-time.orange-bg, .card-time.red-bg {
+        width: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+        margin-left: 5%;
+    }
+    .rightColumn {
+        margin-left: 3%;
+    }
+    .card-time.orange-bg {
+        border-bottom-left-radius: 15px;
+    }
+    .card-time.red-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.darkblue-bg-a {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
+        width: 150px;
+    }
+}
+
+@media (min-width:1024px) {
+    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+        margin-left: 10%;
+    }
+    .rightColumn {
+        margin-left: 3%;
+    }
+    .card-time.orange-bg {
+        border-bottom-left-radius: 15px;
+    }
+    .card-time.red-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.darkblue-bg-a {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
+        width: 150px;
+    }
+}
+
+@media (min-width:1200px) {
+    .leftColumn img {
+        margin-left: 30%;
+    }
+
+    .rightColumn {
+        margin-left: 30px;
+    }
+    .leftColumn h2, .leftColumn h3 {
+        margin-left: 35%;
+    }
+    .connect {
+        margin-left: 30%;
+    }
+    .card-time.blue-bg {
+        border-bottom-left-radius: 15px;
+    }
+    .card-time.orange-bg {
+        border-bottom-left-radius: 15px;
+    }
+    .card-time.red-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.darkblue-bg-a {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
+        width: 150px;
+    }
+}
+
 @media (min-width:1400px) {
     .leftColumn img {
         margin-left: 40%;
@@ -178,10 +275,32 @@ box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px
     .rightColumn {
         margin-left: 50px;
     }
+
     .leftColumn h2, .leftColumn h3 {
         margin-left: 45%;
     }
+
     .connect {
         margin-left: 40%;
+    }
+
+    .card-time.blue-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.orange-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.red-bg {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.darkblue-bg-a {
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
+        width: 150px;
     }
 }
