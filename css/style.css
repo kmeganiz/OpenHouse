@@ -116,10 +116,13 @@ th {
 }
 
 td {
-    border-bottom: 1px solid grey;
     border-right: 1px solid grey;
     background-color: white;
     margin: 20px auto 20px auto;
+}
+
+td {
+    border-bottom: 1px solid grey;
 }
 
 thead th.bg-blue {
@@ -127,6 +130,81 @@ thead th.bg-blue {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     color: white;
+}
+
+.webinar .nav-item {
+    position: relative;
+}
+.webinar .nav-item.bg-orange,
+.webinar .nav-item.bg-red,
+.webinar .nav-item.bg-blue {
+    background-color: transparent;
+}
+.webinar .nav-item.active {
+    margin-bottom: 1rem;
+}
+.webinar .nav-item.active:before {
+    position: absolute;
+    content:'';
+    left: -1rem;
+    right: -1.5rem;
+    height: 100%;
+    z-index: 2;
+}
+.webinar .nav-item:before {
+    position: absolute;
+    content:'';
+    left: -1rem;
+    right: -.75rem;
+    height: 100%;
+    z-index: 2;
+}
+.webinar .nav-item.bg-orange:before {
+    background-color: #FFA401;
+}
+.webinar .nav-item.bg-red:before {
+    background-color: #F83C4A;
+}
+.webinar .nav-item.bg-blue:before {
+    background-color: #318ACC;
+}
+.webinar .nav-link {
+    position: relative;
+    z-index: 5;
+    padding: 1rem;
+}
+.dropshadow:before {
+    position: absolute;
+    content:'';
+    bottom: -1rem;
+    left: -1rem;
+    right: -1.5rem;
+    height: 1rem;
+    z-index: 2;
+}
+.dropshadow:after {
+    position: absolute;
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 16px 12px;
+    border-color: transparent transparent #009C99 transparent;
+    bottom: -1rem;
+    right: -1.5rem;
+    z-index: 2;
+}
+.dropshadow.orange:before {
+    background-color: #E28805;
+}
+.dropshadow.red:before {
+    background-color: #D82339;
+}
+.dropshadow.blue:before {
+    background-color: #4C7393;
+}
+.table.courses td {
+    height: 270px;
 }
 
 q::before {
@@ -152,7 +230,7 @@ q::after {
   
   
 
-tbody td.bg-blue {
+tbody tr td.bg-blue {
     border-bottom-left-radius: 15px;
 }
 
