@@ -24,11 +24,11 @@ body {
     color: white;
 }
 
-.left {
+.bg-left {
     background-color: #018383;
 }
 
-.right {
+.bg-right {
     background-color: #009C99;
 }
 
