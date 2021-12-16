@@ -15,7 +15,7 @@ body {
   font-weight: 400;
 }
 
-.card, .card-body, .left, .right, .rightColumn, .border-bottom {
+.bg-left, .bg-right, .rightColumn, .leftColumn{
     margin: 0;
     padding: 0;
 }
@@ -32,16 +32,23 @@ body {
     background-color: #009C99;
 }
 
-.orange {
+.bg-orange {
     background-color: #FFA401;
 }
 
+.bg-darkorange {
+    background-color: #e28805;
+}
 
-.red {
+.bg-red {
     background-color: #F83C4A;
 }
 
-.blue {
+.bg-darkred {
+    background-color: #d82339;
+}
+
+.bg-blue {
     background-color: #318ACC;
 }
 
@@ -60,7 +67,7 @@ h3 {
     font-weight: 500;
 }
 
-.leftColumn h2, .leftColumn h3 {
+.leftColumn h1, .leftColumn h2, .leftColumn h2, .leftColumn h3, .rightColumn h1, .rightColumn h3, thead {
     color: white;
 }
 
@@ -72,9 +79,6 @@ h3 {
     margin-top: 50px;
 }
 
-.rightColumn h1 {
-    color: white;
-}
 
 .borderline  {
     border-top: 3px solid white;
@@ -103,6 +107,8 @@ h3 {
 
 table {
     border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 td, th {
@@ -115,21 +121,19 @@ th {
 }
 
 td {
-
-main
     border-right: 1px solid grey;
     background-color: white;
     margin: 20px auto 20px auto;
 }
 
 tr {
-     border-bottom: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
 
 thead th.bg-blue {
     background-color: #318ACC;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    color: white;
 }
 
 .webinar .nav-item {
@@ -173,6 +177,20 @@ thead th.bg-blue {
     z-index: 5;
     padding: 1rem;
 }
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-right: none;
+}
+
+tr:last-child {
+    border-bottom-right-radius: 15px;
+    border-right: none;
+}
+
 .dropshadow:before {
     position: absolute;
     content:'';
@@ -194,18 +212,16 @@ thead th.bg-blue {
     right: -1.5rem;
     z-index: 2;
 }
-.dropshadow.orange:before {
+.dropshadow.bg-orange:before {
     background-color: #E28805;
 }
-.dropshadow.red:before {
+.dropshadow.bg-red:before {
     background-color: #D82339;
 }
-.dropshadow.blue:before {
+.dropshadow.bg-blue:before {
     background-color: #4C7393;
 }
-.table.courses td {
-    height: 270px;
-}
+
   
 tbody tr td.bg-blue {
     border-bottom-left-radius: 15px;
@@ -224,48 +240,6 @@ tbody tr td.bg-blue {
     background-color: #318ACC;
 }
 
-tr:last-child { border-bottom:none;}
-tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: none; }
-
-.card {
-    border: none;
-    margin-right: 20px;
-    border-radius: 15px;
-}
-
-.card-header h2 {
-    margin: 10px auto 10px 15px;
-}
-
-.card-time h2 {
-    margin-top: 60px;
-}
-
-.card-header.blue-bg, .card-header.orange-bg, .card-header.red-bg, .card-header.darkblue-bg {
-    color: white;
-    height: 60px;
-    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    align-items: center;
-}
-
-.card-header.blue-bg {
-    background-color: #318ACC;
-}
-
-.card-header.orange-bg {
-    background-color: #FFA401;
-}
-
-.card-header.red-bg {
-    background-color: #F83C4A;
-    color: white;
-}
-
-.btn {
-    border-radius: 15px;
-}
 
 .connect {
     color: white;
@@ -276,38 +250,7 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     color: white;
 }
 
-.card-time.darkblue-bg, .card-time.darkblue-bg-a {
-    background-color: #4C7393;
-    color: white;
-}
 
-.card-time.blue-bg {
-    background-color: #318ACC;
-    color: white;
-}
-
-.card-time.orange-bg {
-    background-color: #E28805;
-    color: white;
-}
-.card-time.red-bg {
-    background-color: #D82339;
-    color: white;
-}
-
-.card-room h4 {
-    font-size: 0.8rem;
-}
-
-.card-room p {
-    font-weight: 700;
-}
-
-.btn-primary {
-    background-color: #318ACC;
-    border-radius: 10px;
-    box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
-}
 
 @media (min-width:375px) {
     .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
@@ -315,9 +258,6 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     }
     .rightColumn {
         margin-left: 3%;
-    }
-    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
-        width: 150px;
     }
 }
 
@@ -328,12 +268,6 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     .rightColumn {
         margin-left: 3%;
     }
-    .card-time.blue-bg, .card-time.darkblue-bg {
-        width: 150px;
-    }
-    .card-time.orange-bg, .card-time.red-bg {
-        width: auto;
-    }
 }
 
 @media (min-width:768px) {
@@ -343,20 +277,6 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     .rightColumn {
         margin-left: 3%;
     }
-    .card-time.orange-bg {
-        border-bottom-left-radius: 15px;
-    }
-    .card-time.red-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.darkblue-bg-a {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
-        width: 150px;
-    }
 }
 
 @media (min-width:1024px) {
@@ -365,20 +285,6 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     }
     .rightColumn {
         margin-left: 3%;
-    }
-    .card-time.orange-bg {
-        border-bottom-left-radius: 15px;
-    }
-    .card-time.red-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.darkblue-bg-a {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
-        width: 150px;
     }
 }
 
@@ -395,23 +301,6 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     }
     .connect {
         margin-left: 30%;
-    }
-    .card-time.blue-bg {
-        border-bottom-left-radius: 15px;
-    }
-    .card-time.orange-bg {
-        border-bottom-left-radius: 15px;
-    }
-    .card-time.red-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.darkblue-bg-a {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
-        width: 150px;
     }
 }
 
@@ -431,23 +320,4 @@ tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: non
     .connect {
         margin-left: 40%;
     }
-
-    .card-time.blue-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.orange-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.red-bg {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.darkblue-bg-a {
-        border-bottom-left-radius: 15px;
-    }
-
-    .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
-        width: 150px;
-    }
+}
