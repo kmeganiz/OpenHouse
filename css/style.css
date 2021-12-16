@@ -103,7 +103,6 @@ h3 {
 
 table {
     border-collapse: collapse;
-    /* margin-right: 100px; */
 }
 
 td, th {
@@ -206,30 +205,7 @@ thead th.bg-blue {
 .table.courses td {
     height: 270px;
 }
-
-q::before {
-    content: "«";
-    color: blue;
-}
   
-q::after {
-    content: "»";
-    color: red;
-}
-  
-.ribbon {
-    background-color: #5BC8F7;
-}
-
-.ribbon::before {
-    content: "Look at this orange box.";
-    background-color: #FFBA10;
-    border-color: black;
-    border-style: dotted;
-}
-  
-  
-
 tbody tr td.bg-blue {
     border-bottom-left-radius: 15px;
 }
@@ -472,4 +448,3 @@ tbody tr td.bg-blue {
     .card-time.blue-bg, .card-time.darkblue-bg, .card-time.orange-bg, .card-time.red-bg {
         width: 150px;
     }
-}
