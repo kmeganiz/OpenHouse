@@ -116,10 +116,14 @@ th {
 }
 
 td {
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
     border-right: 1px solid grey;
     background-color: white;
     margin: 20px auto 20px auto;
+}
+
+tr{
+     border-bottom: 1px solid grey;
 }
 
 thead th.bg-blue {
@@ -168,6 +172,9 @@ tbody tr td.bg-darkblue {
 tbody tr td.bg-blue {
     background-color: #318ACC;
 }
+
+tr:last-child { border-bottom:none;}
+tr:last-child td:last-child { border-bottom-right-radius: 15px;border-right: none; }
 
 .card {
     border: none;
@@ -250,7 +257,6 @@ tbody tr td.bg-blue {
     border-radius: 10px;
     box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (min-width:375px) {
     .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
