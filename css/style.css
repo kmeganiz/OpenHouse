@@ -144,9 +144,7 @@ thead th.bg-blue {
 .webinar .nav-item.bg-blue {
     background-color: transparent;
 }
-.webinar .nav-item.active {
-    margin-bottom: 1rem;
-}
+
 .webinar .nav-item.active:before {
     position: absolute;
     content:'';
