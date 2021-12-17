@@ -21,6 +21,7 @@ body {
 
 .bg-left {
   background-color: #018383;
+  color: white;
 }
 
 .bg-right {
@@ -90,7 +91,7 @@ h3 {
   left: -1rem;
   right: -1.5rem;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .webinar .nav-item:before {
@@ -99,7 +100,7 @@ h3 {
   left: -1rem;
   right: -.75rem;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .webinar .nav-item.bg-orange:before {
@@ -173,16 +174,12 @@ tr:last-child {
 
 .dropshadow.bg-blue:before {
   background-color: #4C7393;
-}
+} 
 
-.webinar .nav-link {
+.webinar .nav-item h2, .webinar .nav-item h3 {
   position: relative;
   z-index: 5;
-  padding: 1rem;
-}
-
-.webinar .nav-item .active .nav-link .active {
-  z-index: 10;
+  padding-top: 1rem;
 }
 
 .borderline {
