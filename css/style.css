@@ -15,307 +15,333 @@ body {
   font-weight: 400;
 }
 
-.bg-left, .bg-right, .rightColumn, .leftColumn{
-    margin: 0;
-    padding: 0;
+.bg-left, .bg-right, .rightColumn, .leftColumn {
+  margin: 0;
+  padding: 0;
 }
 
 .sosmed-icons img {
-    color: white;
+  color: white;
 }
 
 .bg-left {
-    background-color: #018383;
+  background-color: #018383;
 }
 
 .bg-right {
-    background-color: #009C99;
+  background-color: #009C99;
 }
 
 .bg-orange {
-    background-color: #FFA401;
+  background-color: #FFA401;
 }
 
 .bg-darkorange {
-    background-color: #e28805;
+  background-color: #e28805;
 }
 
 .bg-red {
-    background-color: #F83C4A;
+  background-color: #F83C4A;
 }
 
 .bg-darkred {
-    background-color: #d82339;
+  background-color: #d82339;
 }
 
 .bg-blue {
-    background-color: #318ACC;
+  background-color: #318ACC;
 }
 
 h1 {
-    font-size: 1.3rem;
-    font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 1.1rem;
-    font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 0.9rem;
-    font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .leftColumn h1, .leftColumn h2, .leftColumn h2, .leftColumn h3, .rightColumn h1, .rightColumn h3, thead {
-    color: white;
+  color: white;
 }
 
 .leftColumn h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .leftColumn, .rightColumn {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-
-.borderline  {
-    border-top: 3px solid white;
+.borderline {
+  border-top: 3px solid white;
 }
 
 .pushable {
-    background: HSL(207, 32%, 44%);
-    border-radius: 12px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
+  background: HSL(207, 32%, 44%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
 }
+
 .front {
-    display: block;
-    padding: 8px 20px;
-    border-radius: 12px;
-    background: HSL(206, 61%, 50%);
-    color: white;
-    transform: translateY(-6px);
+  display: block;
+  padding: 8px 20px;
+  border-radius: 12px;
+  background: HSL(206, 61%, 50%);
+  color: white;
+  transform: translateY(-6px);
 }
 
 .pushable:active .front {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 table {
-    border-collapse: collapse;
-    border-radius: 15px;
-    overflow: hidden;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
 }
 
 td, th {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 th {
-    font-size: 1.rem;
-    font-weight: bold;
+  font-size: 1.rem;
+  font-weight: bold;
 }
 
 td {
-    border-right: 1px solid grey;
-    background-color: white;
-    margin: 20px auto 20px auto;
+  border-right: 1px solid grey;
+  background-color: white;
+  margin: 20px auto 20px auto;
 }
 
 tr {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 thead th.bg-blue {
-    background-color: #318ACC;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  background-color: #318ACC;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .webinar .nav-item {
-    position: relative;
+  position: relative;
 }
+
 .webinar .nav-item.bg-orange,
 .webinar .nav-item.bg-red,
 .webinar .nav-item.bg-blue {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .webinar .nav-item.active:before {
-    position: absolute;
-    content:'';
-    left: -1rem;
-    right: -1.5rem;
-    height: 100%;
-    z-index: 2;
+  position: absolute;
+  content: '';
+  left: -1rem;
+  right: -1.5rem;
+  height: 100%;
+  z-index: 2;
 }
+
 .webinar .nav-item:before {
-    position: absolute;
-    content:'';
-    left: -1rem;
-    right: -.75rem;
-    height: 100%;
-    z-index: 2;
+  position: absolute;
+  content: '';
+  left: -1rem;
+  right: -.75rem;
+  height: 100%;
+  z-index: 2;
 }
+
 .webinar .nav-item.bg-orange:before {
-    background-color: #FFA401;
+  background-color: #FFA401;
 }
+
 .webinar .nav-item.bg-red:before {
-    background-color: #F83C4A;
+  background-color: #F83C4A;
 }
+
 .webinar .nav-item.bg-blue:before {
-    background-color: #318ACC;
-}
-.webinar .nav-link {
-    position: relative;
-    z-index: 5;
-    padding: 1rem;
+  background-color: #318ACC;
 }
 
 tr:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 td:first-child {
-    border-right: none;
+  border-right: none;
+  width: 20%;
+}
+
+.courses td {
+  width: 22.5%;
+}
+
+.courses td:first-child {
+  width: 10%;
+}
+
+.nextStep td:first-child {
+  width: 10%;
 }
 
 tr:last-child {
-    border-bottom-right-radius: 15px;
-    border-right: none;
+  border-bottom-right-radius: 15px;
+  border-right: none;
 }
 
 .dropshadow:before {
-    position: absolute;
-    content:'';
-    bottom: -1rem;
-    left: -1rem;
-    right: -1.5rem;
-    height: 1rem;
-    z-index: 2;
-}
-.dropshadow:after {
-    position: absolute;
-    content:'';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 16px 12px;
-    border-color: transparent transparent #009C99 transparent;
-    bottom: -1rem;
-    right: -1.5rem;
-    z-index: 2;
-}
-.dropshadow.bg-orange:before {
-    background-color: #E28805;
-}
-.dropshadow.bg-red:before {
-    background-color: #D82339;
-}
-.dropshadow.bg-blue:before {
-    background-color: #4C7393;
+  position: absolute;
+  content: '';
+  bottom: -1rem;
+  left: -1rem;
+  right: -1.5rem;
+  height: 1rem;
+  z-index: 2;
 }
 
-  
+.dropshadow:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 16px 12px;
+  border-color: transparent transparent #009C99 transparent;
+  bottom: -1rem;
+  right: -1.5rem;
+  z-index: 2;
+}
+
+.dropshadow.bg-orange:before {
+  background-color: #E28805;
+}
+
+.dropshadow.bg-red:before {
+  background-color: #D82339;
+}
+
+.dropshadow.bg-blue:before {
+  background-color: #4C7393;
+}
+
+.webinar .nav-link {
+  position: relative;
+  z-index: 5;
+  padding: 1rem;
+}
+
 tbody tr td.bg-blue {
-    border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 tbody tr td:first-child {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 tbody tr td.bg-darkblue {
-    background-color: #4C7393;
+  background-color: #4C7393;
 }
 
 tbody tr td.bg-blue {
-    background-color: #318ACC;
+  background-color: #318ACC;
 }
 
-
 .connect {
-    color: white;
-    margin-top: 30px;
+  color: white;
+  margin-top: 30px;
 }
 
 .sosmed-icons a {
-    color: white;
+  color: white;
 }
 
-
-
 @media (min-width:375px) {
-    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
-        margin-left: 5%;
-    }
-    .rightColumn {
-        margin-left: 3%;
-    }
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
 }
 
 @media (min-width:600px) {
-    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
-        margin-left: 5%;
-    }
-    .rightColumn {
-        margin-left: 3%;
-    }
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
 }
 
 @media (min-width:768px) {
-    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
-        margin-left: 5%;
-    }
-    .rightColumn {
-        margin-left: 3%;
-    }
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
 }
 
 @media (min-width:1024px) {
-    .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
-        margin-left: 10%;
-    }
-    .rightColumn {
-        margin-left: 3%;
-    }
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 10%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
 }
 
 @media (min-width:1200px) {
-    .leftColumn img {
-        margin-left: 30%;
-    }
+  .leftColumn img {
+    margin-left: 30%;
+  }
 
-    .rightColumn {
-        margin-left: 30px;
-    }
-    .leftColumn h2, .leftColumn h3 {
-        margin-left: 35%;
-    }
-    .connect {
-        margin-left: 30%;
-    }
+  .rightColumn {
+    margin-left: 30px;
+  }
+
+  .leftColumn h2, .leftColumn h3 {
+    margin-left: 35%;
+  }
+
+  .connect {
+    margin-left: 30%;
+  }
 }
 
 @media (min-width:1400px) {
-    .leftColumn img {
-        margin-left: 40%;
-    }
+  .leftColumn img {
+    margin-left: 40%;
+  }
 
-    .rightColumn {
-        margin-left: 50px;
-    }
+  .rightColumn {
+    margin-left: 50px;
+  }
 
-    .leftColumn h2, .leftColumn h3 {
-        margin-left: 45%;
-    }
+  .leftColumn h2, .leftColumn h3 {
+    margin-left: 45%;
+  }
 
-    .connect {
-        margin-left: 40%;
-    }
+  .connect {
+    margin-left: 40%;
+  }
 }
