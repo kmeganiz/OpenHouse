@@ -1,295 +1,347 @@
-<!doctype html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+html {
+  box-sizing: border-box;
+}
 
-  <title>Ngee Ann Polytechnic Open House 2022</title>
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
 
-  <!-- Bootstrap Font Icon CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+.bg-left, .bg-right, .rightColumn, .leftColumn {
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+.sosmed-icons img {
+  color: white;
+}
 
-</head>
+.bg-left {
+  background-color: #018383;
+}
 
-<body>
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 col-sm-12 bg-left">
-          <div class="leftColumn">
-            <a href="index.html"><img src="images/NPOH_2022_logo.png" class="img-fluid" alt="NPOH Logo"></a>
-          </div>
-        </div>
+.bg-right {
+  background-color: #009C99;
+}
 
-        <div class="col-lg-9 col-sm-12 bg-right">
-          <div class="rightColumn">
-            <header class="row">
-              <div class="col-9 d-flex justify-content-start align-items-center mb-4">
-                <img src="images/openHouse.png" class="img-fluid me-3" alt="Open House">
-                <h1>Ngee Ann Polytechnic Open House Day 1,<br>6 Jan 2021, Thursday</h1>
-              </div>
-              <div class="col justify-content-end">
-                <img src="images/np-logo.png" class="img-fluid align-items-center" alt="Ngee Ann Polytechnic Logo">
-              </div>
-            </header>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+.bg-orange {
+  background-color: #FFA401;
+}
 
-  <main>
-    <div class="container-fluid webinar">
-      <div class="row">
-        <div class="col-lg-3 col-sm-12 bg-left g-0">
-          <ul class="nav flex-row flex-lg-column leftColumn">
-            <li class="nav-item bg-orange active">
-              <a class="nav-link active disabled" aria-current="page" href="index.html"></a>
-              <h2>Day 1</h2>
-              <h3>6 Jan 2021, Thursday</h3>
-              <div class="dropshadow bg-orange"></div>
-            </li>
-            <li class="nav-item bg-red pt-3">
-              <a class="nav-link" href="#">
-                <h2>Day 2</h2>
-                <h3>7 Jan 2021,&nbsp;Friday&nbsp;&nbsp;&nbsp;</h3>
-              </a>
-            </li>
-            <li class="nav-item bg-blue pt-3">
-              <a class="nav-link" href="#">
-                <h2>Day 3</h2>
-                <h3>8 Jan 2021, Saturday</h3>
-              </a>
-            </li>
-          </ul>
-          <div class="connect mb-5 me-3">
-            <p>Lorem ipsum dolor sit amet, consecte Atuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-            <p>Connect with us</p>
-            <div class="sosmed-icons d-flex justify-content-between pe-4">
-              <i class="bi bi-instagram"></i>
-              <img src="images/tiktok.svg" class="img-fluid">
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-telegram"></i>
-              <i class="bi bi-youtube"></i>
-              <i class="bi bi-facebook"></i>
-            </div>
-          </div>
-        </div>
+.bg-darkorange {
+  background-color: #e28805;
+}
 
-        <div class="col-lg-9 col-sm-12 bg-right">
-          <hr class="borderline">
-          <div class="rightColumn">
-            <div class="row p-2">
-              <div class="col-12">
-                <table class="courses mb-5">
-                  <thead>
-                    <tr>
-                      <th class="bg-blue" colspan="5">Courses & Career e-talks</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="bg-darkblue">11AM-12PM</td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 1</small>
-                          <strong>School of Business & Accountancy</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button></a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 2</small>
-                          <strong>School of Design & Environment</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 3</small>
-                          <strong>School of Engineering</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 4</small>
-                          <strong> School of Film & Media Studies</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                          </span>
-                          </button>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="bg-blue">2PM-3PM</td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 1</small>
-                          <strong>School of Health Sciences</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 2</small>
-                          <strong>School of Humanities & Social Sciences</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 3</small>
-                          <strong>
-                            School of InfoComm Technology</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="col d-flex flex-column flex-wrap">
-                          <small>Room 4</small>
-                          <strong>
-                            School of Life Sciences & Chemical Technology</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-6">
-                <table class="findYourDream mb-5">
-                  <thead>
-                    <tr>
-                      <th class="bg-orange" colspan="2">Find Your Dream Course Webinar</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="bg-darkorange">10AM-11AM</td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 1</small>
-                          <strong>Find Your Dream Course Webinar</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+.bg-red {
+  background-color: #F83C4A;
+}
 
-              <div class="col-6">
-                <table class="admission mb-5">
-                  <thead>
-                    <tr>
-                      <th class="bg-red" colspan="2">All about Admissions Webinar (O-levels)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="bg-darkred">2PM - 3PM</td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 1</small>
-                          <strong>All about Admissions Webinar (O-levels)</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+.bg-darkred {
+  background-color: #d82339;
+}
 
-              <div class="col-12">
-                <table class="nextStep mb-5">
-                  <thead>
-                    <tr>
-                      <th class="bg-blue" colspan="5">Next Step After Poly</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="bg-darkblue">3PM - 4PM</td>
-                      <td>
-                        <div class="col d-flex flex-column">
-                          <small>Room 1</small>
-                          <strong>Next Step After Poly</strong>
-                          <a href="#"><button class="pushable mt-5 mb-3">
-                              <span class="front">
-                                Watch Now <i class="fas fa-arrow-right"></i>
-                              </span>
-                            </button></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+.bg-blue {
+  background-color: #318ACC;
+}
 
-            </div>
-          </div>
-        </div>
+h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 
+h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
-        <script src="scripts/jquery-3.5.1.min.js"></script>
-        <script src="scripts/bootstrap.bundle.min.js"></script>
+h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 
-</body>
-</html>
+.leftColumn h1, .leftColumn h2, .leftColumn h2, .leftColumn h3, .rightColumn h1, .rightColumn h3, thead {
+  color: white;
+}
+
+.leftColumn h2 {
+  text-transform: uppercase;
+}
+
+.leftColumn, .rightColumn {
+  margin-top: 50px;
+}
+
+.borderline {
+  border-top: 3px solid white;
+}
+
+.pushable {
+  background: HSL(207, 32%, 44%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 8px 20px;
+  border-radius: 12px;
+  background: HSL(206, 61%, 50%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+
+td, th {
+  padding: 1rem;
+}
+
+th {
+  font-size: 1.rem;
+  font-weight: bold;
+}
+
+td {
+  border-right: 1px solid grey;
+  background-color: white;
+  margin: 20px auto 20px auto;
+}
+
+tr {
+  border-bottom: 1px solid grey;
+}
+
+thead th.bg-blue {
+  background-color: #318ACC;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.webinar .nav-item {
+  position: relative;
+}
+
+.webinar .nav-item.bg-orange,
+.webinar .nav-item.bg-red,
+.webinar .nav-item.bg-blue {
+  background-color: transparent;
+}
+
+.webinar .nav-item.active:before {
+  position: absolute;
+  content: '';
+  left: -1rem;
+  right: -1.5rem;
+  height: 100%;
+  z-index: 2;
+}
+
+.webinar .nav-item:before {
+  position: absolute;
+  content: '';
+  left: -1rem;
+  right: -.75rem;
+  height: 100%;
+  z-index: 2;
+}
+
+.webinar .nav-item.bg-orange:before {
+  background-color: #FFA401;
+}
+
+.webinar .nav-item.bg-red:before {
+  background-color: #F83C4A;
+}
+
+.webinar .nav-item.bg-blue:before {
+  background-color: #318ACC;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td:first-child {
+  border-right: none;
+  width: 20%;
+}
+
+.courses td {
+  width: 22.5%;
+}
+
+.courses td:first-child {
+  width: 10%;
+}
+
+.nextStep td:first-child {
+  width: 10%;
+}
+
+tr:last-child {
+  border-bottom-right-radius: 15px;
+  border-right: none;
+}
+
+.dropshadow:before {
+  position: absolute;
+  content: '';
+  bottom: -1rem;
+  left: -1rem;
+  right: -1.5rem;
+  height: 1rem;
+  z-index: 2;
+}
+
+.dropshadow:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 16px 12px;
+  border-color: transparent transparent #009C99 transparent;
+  bottom: -1rem;
+  right: -1.5rem;
+  z-index: 2;
+}
+
+.dropshadow.bg-orange:before {
+  background-color: #E28805;
+}
+
+.dropshadow.bg-red:before {
+  background-color: #D82339;
+}
+
+.dropshadow.bg-blue:before {
+  background-color: #4C7393;
+}
+
+.webinar .nav-link {
+  position: relative;
+  z-index: 5;
+  padding: 1rem;
+}
+
+tbody tr td.bg-blue {
+  border-bottom-left-radius: 15px;
+}
+
+tbody tr td:first-child {
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr td.bg-darkblue {
+  background-color: #4C7393;
+}
+
+tbody tr td.bg-blue {
+  background-color: #318ACC;
+}
+
+.connect {
+  color: white;
+  margin-top: 30px;
+}
+
+.sosmed-icons a {
+  color: white;
+}
+
+@media (min-width:375px) {
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width:600px) {
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width:768px) {
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 5%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width:1024px) {
+  .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
+    margin-left: 10%;
+  }
+
+  .rightColumn {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width:1200px) {
+  .leftColumn img {
+    margin-left: 30%;
+  }
+
+  .rightColumn {
+    margin-left: 30px;
+  }
+
+  .leftColumn h2, .leftColumn h3 {
+    margin-left: 35%;
+  }
+
+  .connect {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width:1400px) {
+  .leftColumn img {
+    margin-left: 40%;
+  }
+
+  .rightColumn {
+    margin-left: 50px;
+  }
+
+  .leftColumn h2, .leftColumn h3 {
+    margin-left: 45%;
+  }
+
+  .connect {
+    margin-left: 40%;
+  }
+}
