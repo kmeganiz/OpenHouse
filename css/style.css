@@ -152,7 +152,7 @@ tr:last-child {
   left: -1rem;
   right: -1.5rem;
   height: 1rem;
-  z-index: 2;
+  z-index: 0;
 }
 
 .dropshadow:after {
@@ -165,7 +165,7 @@ tr:last-child {
   border-color: transparent transparent #009C99 transparent;
   bottom: -1rem;
   right: -1.5rem;
-  z-index: 2;
+  z-index: 0;
 }
 
 .dropshadow.bg-orange:before {
@@ -182,8 +182,12 @@ tr:last-child {
 
 .webinar .nav-link {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   padding: 1rem;
+}
+
+.webinar .nav-item .active .nav-link .active {
+  z-index: 10;
 }
 
 .borderline {
