@@ -15,10 +15,10 @@ body {
   font-weight: 400;
 }
 
-.bg-left, .bg-right, .rightColumn, .leftColumn {
+/* .bg-left, .bg-right, .rightColumn, .leftColumn {
   margin: 0;
   padding: 0;
-}
+} */
 
 .sosmed-icons img {
   color: white;
