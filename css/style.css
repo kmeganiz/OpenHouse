@@ -277,6 +277,10 @@ tbody tr td.bg-blue {
   .leftColumn img {
     padding-bottom: 40px;
   }
+
+  .np-logo {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width:600px) {
