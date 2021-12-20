@@ -125,19 +125,6 @@ tr:last-child {
 
 td:first-child {
   border-right: none;
-  width: 20%;
-}
-
-.courses td {
-  width: 22.5%;
-}
-
-.courses td:first-child {
-  width: 10%;
-}
-
-.nextStep td:first-child {
-  width: 10%;
 }
 
 tr:last-child {
@@ -265,6 +252,18 @@ tbody tr td.bg-blue {
   color: white;
 }
 
+.courses td {
+  width: 22.5%;
+}
+
+.courses td:first-child {
+  width: 10%;
+}
+
+.nextStep td:first-child {
+  width: 10%;
+}
+
 @media (min-width:375px) {
   .leftColumn img, .leftColumn h2, .leftColumn h3, .connect {
     margin-left: 5%;
@@ -281,6 +280,13 @@ tbody tr td.bg-blue {
   .np-logo {
     padding-bottom: 40px;
   }
+
+  .findYourDream td:first-child {
+    width: 10%;
+  }
+  
+  .admission .bg-darkred {
+    width: 10%;
 }
 
 @media (min-width:600px) {
@@ -295,6 +301,13 @@ tbody tr td.bg-blue {
   .leftColumn img {
     padding-bottom: 40px;
   }
+
+  .findYourDream td:first-child {
+    width: 10%;
+  }
+  
+  .admission .bg-darkred {
+    width: 10%;
 }
 
 @media (min-width:768px) {
@@ -310,6 +323,13 @@ tbody tr td.bg-blue {
     padding-bottom: 20px;
   }
 
+  .findYourDream td:first-child {
+    width: 10%;
+  }
+  
+  .admission .bg-darkred {
+    width: 10%;
+
 }
 
 @media (min-width:1024px) {
@@ -320,6 +340,14 @@ tbody tr td.bg-blue {
   .rightColumn {
     margin-left: 3%;
   }
+
+  .findYourDream td:first-child {
+    width: 20%;
+  }
+  
+  .admission .bg-darkred {
+    width: 20%;
+
 }
 
 @media (min-width:1200px) {
@@ -338,6 +366,13 @@ tbody tr td.bg-blue {
   .connect {
     margin-left: 30%;
   }
+
+  .findYourDream td:first-child {
+    width: 20%;
+  }
+  
+  .admission .bg-darkred {
+    width: 20%;
 }
 
 @media (min-width:1400px) {
@@ -356,4 +391,11 @@ tbody tr td.bg-blue {
   .connect {
     margin-left: 40%;
   }
+
+  .findYourDream td:first-child {
+    width: 20%;
+  }
+  
+  .admission .bg-darkred {
+    width: 20%;
 }
